@@ -1,4 +1,12 @@
 EDUCATION API ENDPOINT LINK  
-https://script.googleusercontent.com/macros/echo?user_content_key=qOUIS9U43bqC0aTHzZIu30DmY1TQHf2wBmHdVIfKPPRPP1r-kgybNRtt3SgGK8yusU6MM5DAXJDXPtox-b5Em2KTdKwxRP5am5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnNpazQIU9kSWnnfoSCfdI3Cnzw4s5B3V28zzQbm2LZOaJ0dEQZk_v8KdK7KNaZSQNplcI98dq-TqzlcPaxa3m3Meg20yzAwGo9z9Jw9Md8uu&lib=MoeN4cgaFx5b9WlJxY_zCc3g34eXGZQay
+https://script.google.com/macros/s/AKfycbxDEVpz4M5KQG6dlivlV6Fjb-fleq5g6dPKG6HEvPMXzcmWYoXiM1T9YESkXS-BU8Zx/exec
 
+PROJECT API ENDPOINT LINK
+https://script.google.com/macros/s/AKfycbxDEVpz4M5KQG6dlivlV6Fjb-fleq5g6dPKG6HEvPMXzcmWYoXiM1T9YESkXS-BU8Zx/exec
+
+ACHIVEMENTS API ENDPOINT LINK
+https://script.google.com/macros/s/AKfycbz1bO_qas8t_C263im1VWOeIu1_DCrzE-lfaaZDXTw6FAJNxd6vhp-QHlmnhrmbjzb1Ag/exec
+
+SKILLS API ENDPOINT LINK
+https://script.google.com/macros/s/AKfycbxEW76d5-BR1QI8F0LGa5l0GEpEnGkcFlVPu-QtY5V4wt6sUL4PvAtOeHtc4KO7yR08tA/exec
 
