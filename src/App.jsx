@@ -19,7 +19,6 @@ function App() {
         </div>
         <div className='sub-main w-full h-[calc(100vh-4rem)] bg-black sm:h-full sm:w-[calc(100%-10rem)]'>
             <Routes>
-              <Route path='/' element={<Home/>}/>
               <Route path='/home' element={<Home/>}/>
               <Route path='/about' element={<About/>}>
                 <Route path='education' element={<Edu/>}/>

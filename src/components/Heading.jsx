@@ -3,7 +3,7 @@ import {useLocation} from 'react-router-dom'
 const Heading = () => {
  	const location = useLocation();
   console.log(location.pathname)
-  if(location.pathname === '/project/projects' || location.pathname === '/project/skills'){
+  if(location.pathname === '/project/projects' || location.pathname === '/project/skills' ||location.pathname === '/project'){
     return (
       <div>
           <div className="header sm:text-4xl text-3xl font-semibold opacity-50 ">
@@ -12,7 +12,7 @@ const Heading = () => {
       </div>
     )
   }
-else if(location.pathname === '/about/education' || location.pathname === '/about/achivements'){
+else if(location.pathname === '/about/education' || location.pathname === '/about/achivements' || location.pathname === '/about'){
   return (
     <div>
         <div className="header sm:text-4xl text-3xl font-semibold opacity-50 ">
