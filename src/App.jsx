@@ -11,7 +11,7 @@ function App() {
           <Navbar/>
         </div>
         <div className='sub-main w-full h-[calc(100vh-4rem)] bg-black sm:h-full sm:w-[calc(100%-10rem)]'>
-          <Contact/>
+          <Home/>
         </div>
     </div>
    

@@ -10,7 +10,7 @@ const About = () => {
             <a href=""><li>Achivements</li></a>
         </div>
         <div className="content w-full h-[calc(100%-20%)] overflow-auto">
-            <Ach/>
+            <Edu/>
         </div>
         <div className="headings w-full h-[10%] flex items-center justify-center">
             <Heading/>
