@@ -4,6 +4,7 @@ import { Doughnut } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
+  
     labels: ['HTML','CSS','JS','NODEJS','ANGULAR','REACTJS',],
     datasets: [
       {

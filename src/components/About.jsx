@@ -1,5 +1,9 @@
 import React from 'react'
 import Heading from './Heading'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d6d23a36a562409d574149b8b8d0a21099972b6
 import { Outlet, NavLink } from 'react-router-dom'
 const About = () => {
   return (

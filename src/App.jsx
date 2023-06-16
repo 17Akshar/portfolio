@@ -1,5 +1,9 @@
 import Home from './components/Home';
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+=======
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+>>>>>>> 8d6d23a36a562409d574149b8b8d0a21099972b6
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Ps from './components/Ps'

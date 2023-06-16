@@ -3,8 +3,13 @@ import profile_pic from '../assets/profile_pic_with_grad.png'
 const Home = () => {
   return (
     <div className='w-full h-full flex item-center justify-center sm:flex-row flex-col-reverse'>
+<<<<<<< HEAD
         <div className="left  sm:h-full sm:w-1/2 h-[50%] w-full flex items-start sm:items-center justify-center relative">
             <img src={profile_pic} alt="" className='sm:h-[70%] h-[100%] relative'/>
+=======
+        <div className="left  sm:h-full sm:w-1/2 h-[50%] w-full flex items-center justify-center relative">
+            <img src={profile_pic} alt="" className='sm:h-[70%] h-[90%] relative'/>
+>>>>>>> 8d6d23a36a562409d574149b8b8d0a21099972b6
         </div>
         <div className="right sm:h-full sm:w-1/2 h-[50%] w-full flex items-center justify-center flex-col">
             <h1 className='sm:text-6xl text-4xl font-semibold'><span className='text-[#FA5A00]'>A</span>kshar <span className='text-[#FA5A00]'>P</span>armar</h1>
