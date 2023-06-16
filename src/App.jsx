@@ -1,5 +1,5 @@
 import Home from './components/Home';
-import { BrowserRouter, Routes, Route, Router, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Ps from './components/Ps'
@@ -18,7 +18,6 @@ function App() {
           <Navbar/>
         </div>
         <div className='sub-main w-full h-[calc(100vh-4rem)] bg-black sm:h-full sm:w-[calc(100%-10rem)]'>
-          <Home/>
             <Routes>
               <Route path='/home' element={<Home/>}/>
               <Route path='/about' element={<About/>}>

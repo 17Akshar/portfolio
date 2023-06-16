@@ -32,9 +32,9 @@ const Contact = () => {
             <div className="right  sm:w-1/2 sm:h-full w-full h-[30%] flex items-center justify-evenly flex-col">
                 <p className="sm:text-2xl text-md sm:p-0 px-5 text-center">Shying by giving details ??  No issuse connect me via...</p>
                 <div className="links w-full h-1/2 list-none flex items-center justify-center sm:flex-col flex-row sm:text-6xl text-3xl sm:gap-4 gap-10 text-[#FA5A00]">
-                    <a href=""><li><i class="fa-brands fa-linkedin"></i></li></a>
-                    <a href=""><li><i class="fa-brands fa-square-github"></i></li></a>
-                    <a href=""><li><i class="fa-solid fa-envelope"></i></li></a>
+                    <a href="www.google.com"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                    <a href="www.google.com"><li><i class="fa-brands fa-square-github"></i></li></a>
+                    <a href="www.google.com"><li><i class="fa-solid fa-envelope"></i></li></a>
 
                 </div>
             </div>
