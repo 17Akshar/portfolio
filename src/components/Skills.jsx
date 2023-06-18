@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -61,7 +62,7 @@ const Skills = (props) => {
     ],
   };
   return (
-    <div className='w-[100%] h-[100%] flex items-center justify-center overflow-hidden'>
+    <div  className='w-[100%] h-[100%] flex items-center justify-center overflow-hidden'>
         <div className="content sm:h-[100%] sm:w-[100%] h-screen w-screen flex items-center overflow-auto justify-center">
         <Bar options={options} data={data} />
         </div>

@@ -1,9 +1,10 @@
 import React from 'react'
 import Heading from './Heading'
+import {motion} from 'framer-motion'
 const Contact = () => {
   return (
     <>
-    <div className='h-full w-full flex items-center flex-col'>
+    <motion.div iinitial={{height:'0%'}} animate={{height:'100%'}} exit={{height:'0%',transition:{duration:0.5}}} className='h-full w-full flex items-center flex-col'>
         <div className="content w-full h-[calc(100%-10%)] overflow-auto flex items-center justify-center sm:flex-row flex-col">
             <div className="left sm:w-1/2 sm:h-full  w-full h-[70%] flex items-center justify-center flex-col ">
                 <p className='text-center sm:text-2xl text-xl'>Impressed by having a dive into a portfolio...??</p>
@@ -41,7 +42,7 @@ const Contact = () => {
         <div className="headings w-full h-[10%] flex items-center justify-center">
             <Heading/>
         </div>
-    </div>
+    </motion.div>
     </>
   )
 }

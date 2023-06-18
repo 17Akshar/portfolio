@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react'
 import Loader from "react-js-loader";
-
 const Project = (props) => {
   const [project,setProject]=useState(null)
   useEffect(()=>{
@@ -13,7 +12,7 @@ const Project = (props) => {
             <div className='w-full h-full'>
               <Loader type="bubble-scale" bgColor={"#FA5A00"} title={"Loading..."} color={'#FFFFFF'} size={50} />
             </div>:
-            <div className='w-full h-full flex sm:items-start  sm:justify-center sm:gap-7 sm:flex-row flex-col items-center justify-start sm:flex-wrap'>
+            <div  className='w-full h-full flex sm:items-start  sm:justify-center sm:gap-7 sm:flex-row flex-col items-center justify-start sm:flex-wrap'>
             {
               project.map((list)=>{
                 if(list.project_id!=='project_id'){

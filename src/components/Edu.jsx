@@ -1,5 +1,6 @@
 import React, {useState,useEffect}from 'react'
 import Loader from "react-js-loader";
+
 const Edu = (props) => {
   const [edu,setEdu]=useState(null)
   useEffect(()=>{
@@ -13,7 +14,7 @@ const Edu = (props) => {
             <div className='w-full h-full'>
               <Loader type="bubble-scale" bgColor={"#FA5A00"} title={"Loading..."} color={'#FFFFFF'} size={50} />
             </div>:
-            <div className="w-10/12 md:w-7/12 lg:6/12 mx-auto relative py-20">
+            <div  className="w-10/12 md:w-7/12 lg:6/12 mx-auto relative py-20">
             <div className="border-l-2 mt-10">
               {edu.map((list)=>{
                 if(list.education_id!=='education_id'){

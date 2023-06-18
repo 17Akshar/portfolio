@@ -1,16 +1,16 @@
 import React,{useState,useEffect} from 'react'
 import profile_pic from '../assets/profile_pic_with_grad.png'
 import Loader from "react-js-loader";
-
+import { motion } from 'framer-motion';
 const Home = (props) => {
   const [tag,setTag] = useState(null)
   useEffect(()=>{
     setTag(props.data)
   })
   return (
-    <div className='w-full h-full flex item-center justify-center sm:flex-row flex-col-reverse'>
+    <motion.div initial={{height:'0%'}} animate={{height:'100%'}} exit={{height:'0%',transition:{duration:0.5}}} className='w-full h-full flex item-center justify-center sm:flex-row flex-col-reverse'>
         <div className="left  sm:h-full sm:w-1/2 h-[40%] w-full flex items-center justify-center relative">
-            <img src={profile_pic} alt="" className='sm:h-[70%] h-[90%] relative'/>
+            <img  src={profile_pic} alt="" className='sm:h-[70%] h-[90%] relative'/>
         </div>
         <div className="right sm:h-full sm:w-1/2 h-[60%] w-full flex items-center justify-center flex-col">
             <h1 className='sm:text-6xl text-4xl font-semibold'><span className='text-[#FA5A00]'>A</span>kshar <span className='text-[#FA5A00]'>P</span>armar</h1>
@@ -41,7 +41,7 @@ const Home = (props) => {
             }
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
