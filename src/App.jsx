@@ -39,7 +39,7 @@ function App() {
         <div className='sub-main w-full h-[calc(100vh-4rem)] bg-black sm:h-full sm:w-[calc(100%-10rem)]'>
             <AnimatePresence>
             <Routes location={location} key={location.pathname.split('/')[1]}>
-            <Route path='/portfolio' element={<Home data={noti} allData={{'edu':edu,'noti':noti,'project':project,'skill':skills}} />}/>
+            <Route path='/portfolio/' element={<Home data={noti} allData={{'edu':edu,'noti':noti,'project':project,'skill':skills}} />}/>
             <Route path='/' element={<Home data={noti} allData={{'edu':edu,'noti':noti,'project':project,'skill':skills}} />}/>
             <Route path='/home' element={<Home data={noti} allData={{'edu':edu,'noti':noti,'project':project,'skill':skills}} />}/>
               <Route path='/about' element={<About/>}>
