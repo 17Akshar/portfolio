@@ -13,7 +13,7 @@ import Skills from './components/Skills';
 import { useEffect, useState} from 'react';
 import Loading from './Loading';
 import { AnimatePresence } from 'framer-motion';
-
+import profile from '../src/assets/profile_pic_with_grad.png'
 function App() {
   const [edu,Setedu] = useState(null)
   const [ach,Setach] = useState(null)
@@ -21,7 +21,7 @@ function App() {
   const [skills,Setskills] = useState(null)
   const [noti,Setnoti] = useState(null)
   useEffect(()=>{
-    fetch('https://script.google.com/macros/s/AKfycbz_4ed1-A7GzRtg7GB6OyzX4Ma-cN7G7SDVOcBThypAp8y24_TncaH4zPmPE0elZkBHEA/exec').then(response=>response.json()).then(data=>{
+    fetch('https://script.google.com/macros/s/AKfycbxvtpE45_38Xy-_Rn556jCumb-kJ1NzQA3Oq1zIfzgAtuSy0S6IOKnLMRYaD02a2iWZPQ/exec').then(response=>response.json()).then(data=>{
       Setedu(data.education)
       Setach(data.ach)
       Setproject(data.project)
@@ -31,7 +31,6 @@ function App() {
   },[])
   const location = useLocation();
   return (
-  
     edu==null&&ach==null&&project==null&&skills==null&&noti==null?<Loading/>:
     <div className='main h-[100vh] w-full bg-black flex items-center text-gray-100 sm:flex-row flex-col-reverse'>
         <div className='navbar sm:h-full sm:w-40 w-full h-16 bg-black '>
@@ -39,8 +38,9 @@ function App() {
         </div>
         <div className='sub-main w-full h-[calc(100vh-4rem)] bg-black sm:h-full sm:w-[calc(100%-10rem)]'>
             <AnimatePresence>
-            <Routes location={location} key={location.pathname.split('/')[1]}> 
-              <Route path='/home' element={<Home data={noti} />}/>
+            <Routes location={location} key={location.pathname.split('/')[1]}>
+            <Route path='/' element={<Home data={noti} allData={{'edu':edu,'noti':noti,'project':project,'skill':skills}} />}/>
+            <Route path='/home' element={<Home data={noti} allData={{'edu':edu,'noti':noti,'project':project,'skill':skills}} />}/>
               <Route path='/about' element={<About/>}>
                 <Route path='education' element={<Edu data={edu} />}/>
                 <Route path='achivements' element={<Ach data={ach} />}/>

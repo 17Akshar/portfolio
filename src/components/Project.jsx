@@ -1,6 +1,11 @@
 import React,{useState,useEffect} from 'react'
 import Loader from "react-js-loader";
 const Project = (props) => {
+  const project_view = (name)=>{
+    var url = "https://script.google.com/macros/s/AKfycbz3VGTQ1Imx3Yfpi9l6r7N-oX-Abd1b4ybAOazVw6Jw1gK3VDq0ogUdjXVhbd9WxeUv6A/exec?action=projectView"
+    fetch(url,{method:'post',body:JSON.stringify({name:name,count:1})}).then(response=>response.json()).then(res=>{console.log(res)})
+    console.log("name",name)
+  }
   const [project,setProject]=useState(null)
   useEffect(()=>{
     setProject(props.data)
@@ -21,7 +26,7 @@ const Project = (props) => {
                   <div className="text-2xl text-purple-100 ">0{list.project_id} . {list.project_name}</div>
                 </div>
                 <a href={list.project_link} target='_blank'>
-                <div className="text-[#FA5A00] text-xl my-auto bg-white rounded-lg  p-2">
+                <div onClick={()=>{project_view(list.project_name)}} className="text-[#FA5A00] text-xl my-auto bg-white rounded-lg  p-2">
                   <i className="fa-solid fa-eye"></i>
                 </div>
                 </a>

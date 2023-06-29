@@ -25,7 +25,7 @@ const Edu = (props) => {
                         <h1 className="text-xl font-bold mt-0">{list.school_name}</h1>
                         <h3>{list.start_year}-{list.end_year}</h3>
                       </div>
-                      <p className="text-end absolute bottom-2 right-2 text-4xl sm:text-5xl font-semibold text-black opacity-50 hover:text-gray-300">0{list.education_id}</p>
+                      <p className="text-end absolute bottom-2 right-2 text-4xl sm:text-5xl font-semibold text-black opacity-50 hover:text-gray-300">{list.education_id}</p>
                     </div>
               } 
               })}

@@ -3,6 +3,11 @@ import Loader from "react-js-loader";
 
 const Ach = (props) => {
   const [ach,setAch] = useState(null)
+  const achAnalysis = (name)=>{
+    var url = " https://script.google.com/macros/s/AKfycbxoh5VXy6B5oPoPE5SH4Npell3cVbaUHo2h2h9IqlCLRGdGNFWog6EwtmFBLBfGzemnbA/exec?action=achView"
+    fetch(url,{method:'post',body:JSON.stringify({name:name,count:'1'})}).then(response=>response.json()).then(data=>console.log(data))
+  }
+
   useEffect(()=>{
     setAch(props.data)
     console.log(ach)
@@ -25,7 +30,7 @@ const Ach = (props) => {
                     <p className='overflow-auto text-black opacity-75 text-md '>{list.ach_desc}</p>
                 </div>      
                 <div className="download h-full w-[20%]  flex items-center justify-center text-[#FA5A00] sm:text-4xl text-2xl">
-                   <a href={"https://drive.google.com/uc?export=download&id="+list.ach_file_id} download={list.ach_name}><i class="fa-solid fa-file-arrow-down"></i></a>
+                   <a onClick={()=>{achAnalysis(list.ach_name)}} href={"https://drive.google.com/uc?export=download&id="+list.ach_file_id} download={list.ach_name}><i class="fa-solid fa-file-arrow-down"></i></a>
                 </div>
             </div> 
                 }

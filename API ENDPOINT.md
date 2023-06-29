@@ -15,7 +15,16 @@ https://script.google.com/macros/s/
 AKfycbwhbG0jumBN10kY_ldH3RnSEbXlmmcYS4LUJ_VA6Ws1td_YDSfWbqhj6jeEVsnC646XAA/exec
 
 GET:ALL IN ONE API
-https://script.google.com/macros/s/AKfycbz_4ed1-A7GzRtg7GB6OyzX4Ma-cN7G7SDVOcBThypAp8y24_TncaH4zPmPE0elZkBHEA/exec
+https://script.google.com/macros/s/AKfycbxvtpE45_38Xy-_Rn556jCumb-kJ1NzQA3Oq1zIfzgAtuSy0S6IOKnLMRYaD02a2iWZPQ/exec
 
 POST:CONTACT API
-https://script.google.com/macros/s/AKfycbzfbvGNH1QX_ireUFfEc3prVOyMTTuVp7ZHVrrvZliDB_XJoFy8F_hj9bmFLGf8PKmi6A/exec?action=addContact
+https://script.google.com/macros/s/AKfycby6yzMhux2f_DL7pkuYZ902fcilthbngjoR8uTvmoAB6uEvO7y7h9MB7yXvjEhIZsO6/exec?action=getContact
+
+PROJECT VIEW ANALYSIS API
+https://script.google.com/macros/s/AKfycbz3VGTQ1Imx3Yfpi9l6r7N-oX-Abd1b4ybAOazVw6Jw1gK3VDq0ogUdjXVhbd9WxeUv6A/exec?action=projectView
+
+ACHIEVEMENTS VIEW ANALYSIS API
+https://script.google.com/macros/s/AKfycbxoh5VXy6B5oPoPE5SH4Npell3cVbaUHo2h2h9IqlCLRGdGNFWog6EwtmFBLBfGzemnbA/exec
+
+SOCIAL MEDIA VIEW ANALYSIS API
+https://script.google.com/macros/s/AKfycbzzfERIK1lr3gSR3OYicGpVh6srifF_U8LeMMdX2zSx8YmuN8rtUHSFCNp5ZK2iAnzQTA/exec?action=addSocial
