@@ -28,3 +28,6 @@ https://script.google.com/macros/s/AKfycbxoh5VXy6B5oPoPE5SH4Npell3cVbaUHo2h2h9Iq
 
 SOCIAL MEDIA VIEW ANALYSIS API
 https://script.google.com/macros/s/AKfycbzzfERIK1lr3gSR3OYicGpVh6srifF_U8LeMMdX2zSx8YmuN8rtUHSFCNp5ZK2iAnzQTA/exec?action=addSocial
+
+RESUME DOWNLOAD API
+https://script.google.com/macros/s/AKfycbw9PBj0kYHsi2DX7KHrKe6u6z6npwKataaHErjxQ7yywQrvzhT8F622sW7w-LBL8XC4yQ/exec?action=resume

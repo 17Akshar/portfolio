@@ -3,7 +3,12 @@ import Loader from "react-js-loader";
 import { motion } from 'framer-motion';
 
 const Home = (props) => {
-  
+  const ResumeDownload = ()=>{
+    var new_date = new Date()
+    var url = "https://script.google.com/macros/s/AKfycbw9PBj0kYHsi2DX7KHrKe6u6z6npwKataaHErjxQ7yywQrvzhT8F622sW7w-LBL8XC4yQ/exec?action=resume"
+
+    fetch(url,{method:'post',body:JSON.stringify({"name":'resume',"count":'1',"date":new_date.getDate().toString()+"/"+(new_date.getMonth()+1).toString()+"/"+new_date.getFullYear().toString()})}).then(reponse=>reponse.json()).then(data=>console.log(data))
+  }
   const [tag,setTag] = useState(null)
   useEffect(()=>{
     setTag(props.data)
@@ -35,7 +40,7 @@ const Home = (props) => {
                   <h1 className='sm:text-6xl text-4xl font-semibold'><span className='text-[#FA5A00]'>A</span>kshar <span className='text-[#FA5A00]'>P</span>armar</h1>
                   <p className='sm:text-3xl text-xl text-[#FA5A00] font-semibold sm:mt-3 mt-2 tracking-wide'>{list.name_desc}</p>
                   <p className='text-[#FFFFFF] sm:text-3xl text-center sm:mt-4 sm:px-40 px-10 mt-5'>{list.description}</p>
-                  <a href={"https://drive.google.com/uc?export=download&id="+list.resume}><button className="bg-[#FA5A00] sm:px-8 sm:py-2 px-6 py-2 sm:text-xl text-lg rounded-lg mt-10">Resume</button></a>
+                  <a onClick={ResumeDownload} href={"https://drive.google.com/uc?export=download&id="+list.resume}><button className="bg-[#FA5A00] sm:px-8 sm:py-2 px-6 py-2 sm:text-xl text-lg rounded-lg mt-10">Resume</button></a>
                   <div className='special-cards  sm:mt-16 mt-8 w-full h-20 overflow-auto flex items-center justify-evenly flex-wrap flex-row'>
                   <div className="special-tags w-[90%]  h-20 bg-gray-900 flex items-center justify-center">
   <div className="left w-[25%] h-full shadow-3xl bg-white flex items-center justify-center">
