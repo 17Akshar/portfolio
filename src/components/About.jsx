@@ -9,7 +9,7 @@ const About = () => {
             <NavLink className={({ isActive }) => (isActive ? 'opacity-100 sm:text-3xl text-xl' : 'opacity-25 text-md')} to="/about/education"><li>Education</li></NavLink>
             <NavLink className={({ isActive }) => (isActive ? 'opacity-100 sm:text-3xl text-xl' : 'opacity-25 text-md')} to="/about/achivements"><li>Achivements</li></NavLink>
         </div>
-        <div className="content w-full h-[calc(100%-20%)] overflow-auto">
+        <div className="content w-full h-[calc(100%-20%-40px)] overflow-auto">
             <Outlet/>
         </div>
         <div className="headings w-full h-[10%] flex items-center justify-center">

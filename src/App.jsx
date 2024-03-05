@@ -32,11 +32,15 @@ function App() {
   const location = useLocation();
   return (
     edu==null&&ach==null&&project==null&&skills==null&&noti==null?<Loading/>:
-    <div className='main h-[100vh] w-full bg-black flex items-center text-gray-100 sm:flex-row flex-col-reverse'>
+
+    <div className='main h-[100vh] w-full bg-black flex items-center text-gray-100 sm:flex-row flex-col-reverse overflow-hidden'>
         <div className='navbar sm:h-full sm:w-40 w-full h-16 bg-black '>
           <Navbar/>
         </div>
-        <div className='sub-main w-full h-[calc(100vh-4rem)] bg-black sm:h-full sm:w-[calc(100%-10rem)]'>
+        <div className='sub-main w-full h-[calc(100vh-4rem)] bg-black sm:h-[100vh] sm:w-[calc(100%-10rem)]'>
+            <div className='w-full bg-red-900 sm:h-[40px] h-[50px] flex items-center justify-center overflow-hidden'>
+              <p className='flex whitespace-nowrap'>Redesigned website launching soon! 🚀</p>
+            </div>
             <AnimatePresence>
             <Routes location={location} key={location.pathname.split('/')[1]}>
             <Route path='/portfolio/' element={<Home data={noti} allData={{'edu':edu,'noti':noti,'project':project,'skill':skills}} />}/>
